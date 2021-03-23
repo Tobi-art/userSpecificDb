@@ -21,14 +21,13 @@ if ($res == false) {
 
 $val = $stmt->fetch();
 
+
 if ($val != '') {
     $_SESSION['chk_ssid'] = session_id();
-    $_SESSION['kanri_flag'] = $val['kanri_flag'];
-    $_SESSION['name'] = $val['name'];
+    // $_SESSION['kanri_flag'] = $val['kanri_flag'];
+    $_SESSION['user_nm'] = $val['user_nm'];
 
-
-
-    header('Location: index.php');
+    header('Location: ztest.php');
 } else {
     header('Location: login.php');
 }
