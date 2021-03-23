@@ -1,10 +1,9 @@
 <?php
 include('_func.php');
-$dbnm = $_SESSION['user_nm'];
 
-$category = 'Mami ha';
-$item = 'tobi ga';
-$location = 'suki';
+$category = 'test2';
+$item = 'test2';
+$location = 'test2';
 
 $sql = ('INSERT INTO ' . $dbnm . ' (id, category, item, location, expire, indate) VALUES(NULL, :category, :item, :location, sysdate(), sysdate())');
 $stmt = $pdo->prepare($sql);

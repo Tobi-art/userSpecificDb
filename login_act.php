@@ -24,7 +24,7 @@ $val = $stmt->fetch();
 
 if ($val != '') {
     $_SESSION['chk_ssid'] = session_id();
-    // $_SESSION['kanri_flag'] = $val['kanri_flag'];
+    // $_SESSION['life_flag'] = $val['life_flag'];
     $_SESSION['user_nm'] = $val['user_nm'];
 
     header('Location: ztest.php');
